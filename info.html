@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Chauffeur</title>
-    <style>
-        body {
-            background-color: #000; /* fond noir */
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        img {
-            max-width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 0 25px rgba(255,255,255,0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-        img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 35px rgba(255,255,255,0.5);
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info - Aix Marseille VTC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #000; /* fond noir */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #d4af37; /* doré */
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .qr-container {
+      background: #111;
+      padding: 20px;
+      border: 2px solid #d4af37;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .qr-container img {
+      width: 200px;
+      height: 200px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <h1>Scannez-moi !</h1>
-    <p>Scannez et restez connecté avec votre chauffeur discret et fiable.</p>
-    <!-- QR code WhatsApp -->
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/33743542309&size=200x200" alt="QR WhatsApp">
+  <h1>Service VTC Premium Aix-Marseille</h1>
+  <p>Votre chauffeur privé professionnel pour tous vos déplacements.<br>
+     Confort, ponctualité et élégance garantis.</p>
+  <div class="qr-container">
+    <img src="qr.png" alt="QR Code WhatsApp">
+  </div>
+  <footer>© 2025 Aix Marseille VTC</footer>
 </body>
 </html>
