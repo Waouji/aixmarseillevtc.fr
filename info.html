@@ -1,49 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infos VTC</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #000;   /* Fond noir */
-      color: #fff;             /* Texte blanc */
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      color: #f1c40f; /* Jaune doré */
-      margin-top: 50px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #ddd;
-    }
-
-    a {
-      color: #1abc9c; /* Turquoise */
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact WhatsApp</title>
+    <style>
+        body {
+            background-color: #000; /* fond noir */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 250px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Bienvenue sur Aix Marseille VTC</h1>
-  <p>
-    Cette page est en construction.<br>
-    Bientôt vous trouverez toutes les informations concernant nos services VTC.
-  </p>
-  <p>
-    <a href="index.html">⬅ Retour à l'accueil</a>
-  </p>
+    <h1>Contactez-nous sur WhatsApp</h1>
+    <!-- QR code généré pour WhatsApp -->
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/33743542309&size=200x200" alt="QR WhatsApp">
+    <p>Scannez le QR code pour envoyer un message directement.</p>
 </body>
 </html>
