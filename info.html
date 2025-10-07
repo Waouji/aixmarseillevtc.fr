@@ -65,11 +65,15 @@
     }
     .qr-container {
       background: #111;
-      padding: 20px;
+      padding: 25px;
       border: 2px solid #d4af37;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
       display: inline-block;
+      transition: transform 0.3s;
+    }
+    .qr-container:hover {
+      transform: scale(1.05);
     }
     .qr-container img {
       width: 220px;
@@ -89,6 +93,25 @@
       padding: 15px;
       color: #777;
       font-size: 0.9em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      main h1 {
+        font-size: 1.8em;
+      }
+      .qr-container img {
+        width: 180px;
+        height: 180px;
+      }
     }
   </style>
 </head>
@@ -115,7 +138,7 @@
        Confort, ponctualité et élégance garantis.</p>
 
     <div class="qr-container">
-      <img src="qr.png" alt="QR Code WhatsApp">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/33624563736" alt="QR Code WhatsApp">
       <p>Scannez et restez connecté avec votre chauffeur discret et fiable.</p>
     </div>
   </main>
