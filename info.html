@@ -5,113 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info - Aix Marseille VTC</title>
   <style>
-    /* RESET */
-    body, h1, p, ul, li {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: "Helvetica Neue", sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    /* HEADER */
-    header {
-      background: #111;
-      border-bottom: 2px solid #d4af37;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-    }
-    header .logo {
-      color: #d4af37;
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav ul li a:hover, 
-    nav ul li a.active {
-      color: #d4af37;
-    }
-
-    /* MAIN */
-    main {
-      text-align: center;
-      padding: 80px 20px;
-      min-height: 80vh;
-    }
-    main h1 {
-      color: #d4af37;
-      font-size: 2.2em;
-      margin-bottom: 15px;
-    }
-    main p {
-      font-size: 1.2em;
-      color: #ccc;
-      max-width: 600px;
-      margin: 0 auto 40px;
-    }
-    .qr-container {
-      background: #111;
-      padding: 25px;
-      border: 2px solid #d4af37;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-    .qr-container:hover {
-      transform: scale(1.05);
-    }
-    .qr-container img {
-      width: 220px;
-      height: 220px;
-    }
-    .qr-container p {
-      margin-top: 15px;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #111;
-      border-top: 2px solid #d4af37;
-      text-align: center;
-      padding: 15px;
-      color: #777;
-      font-size: 0.9em;
-    }
-
-    /* RESPONSIVE */
+    body, h1, p, ul, li { margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", sans-serif; background: #000; color: #fff; }
+    header { background: #111; border-bottom: 2px solid #d4af37; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+    .logo { color: #d4af37; font-size: 1.5em; font-weight: bold; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { text-decoration: none; color: #fff; font-weight: bold; transition: color 0.3s; }
+    nav ul li a:hover, nav ul li a.active { color: #d4af37; }
+    main { text-align: center; padding: 80px 20px; min-height: 80vh; }
+    main h1 { color: #d4af37; font-size: 2.2em; margin-bottom: 15px; }
+    main p { font-size: 1.2em; color: #ccc; max-width: 600px; margin: 0 auto 40px; }
+    .qr-container { background: #111; padding: 25px; border: 2px solid #d4af37; border-radius: 20px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.6); display: inline-block; transition: transform 0.3s; }
+    .qr-container:hover { transform: scale(1.05); }
+    .qr-container img { width: 220px; height: 220px; }
+    .qr-container p { margin-top: 15px; font-weight: bold; color: #fff; }
+    footer { background: #111; border-top: 2px solid #d4af37; text-align: center; padding: 15px; color: #777; font-size: 0.9em; }
     @media (max-width: 480px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-      main h1 {
-        font-size: 1.8em;
-      }
-      .qr-container img {
-        width: 180px;
-        height: 180px;
-      }
+      header { flex-direction: column; gap: 10px; }
+      nav ul { flex-direction: column; gap: 10px; }
+      main h1 { font-size: 1.8em; }
+      .qr-container img { width: 180px; height: 180px; }
     }
   </style>
 </head>
@@ -138,7 +51,7 @@
        Confort, ponctualité et élégance garantis.</p>
 
     <div class="qr-container">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/33624563736" alt="QR Code WhatsApp">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/33743542309" alt="QR Code WhatsApp">
       <p>Scannez et restez connecté avec votre chauffeur discret et fiable.</p>
     </div>
   </main>
