@@ -13,23 +13,34 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 20px;
         }
         h1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 15px;
+            letter-spacing: 1px;
         }
         p {
             font-size: 1.2rem;
-            margin-top: 10px;
+            margin-bottom: 30px;
         }
         img {
             max-width: 250px;
-            margin-top: 25px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(255,255,255,0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 35px rgba(255,255,255,0.5);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
