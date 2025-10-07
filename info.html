@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact WhatsApp</title>
+    <title>Contact Chauffeur</title>
     <style>
         body {
             background-color: #000; /* fond noir */
@@ -14,17 +14,29 @@
             height: 100vh;
             flex-direction: column;
             font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
         img {
             max-width: 250px;
-            margin-top: 20px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.3);
         }
     </style>
 </head>
 <body>
-    <h1>Contactez-nous sur WhatsApp</h1>
-    <!-- QR code généré pour WhatsApp -->
+    <h1>Scannez-moi !</h1>
+    <p>Scannez et restez connecté avec votre chauffeur discret et fiable.</p>
+    <!-- QR code WhatsApp -->
     <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/33743542309&size=200x200" alt="QR WhatsApp">
-    <p>Scannez le QR code pour envoyer un message directement.</p>
 </body>
 </html>
