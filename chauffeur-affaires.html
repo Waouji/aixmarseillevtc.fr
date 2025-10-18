@@ -3,12 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chauffeur d'Affaires à Aix-Marseille | VTC Business & Corporate</title>
-    <meta name="description" content="Service VTC d'affaires premium à Aix-en-Provence et Marseille. Chauffeurs discrets, véhicules haut de gamme pour vos déplacements professionnels.">
+    <title>Chauffeur d'Affaires Premium Aix-Marseille | VTC Business & Corporate 24/7</title>
+    <meta name="description" content="Service VTC d'affaires premium à Aix-en-Provence et Marseille. Chauffeurs discrets, véhicules haut de gamme pour vos déplacements professionnels, séminaires, roadshows. Ponctualité & confidentialité garanties.">
+    <meta name="keywords" content="chauffeur d'affaires aix-marseille, vtc business marseille, transport corporate aix-en-provence, chauffeur privé professionnel, mise a disposition vtc, roadshow vtc, transport séminaire paca">
+    <meta name="author" content="VTC Aix-Marseille">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.aixmarseillevtc.fr/chauffeur-affaires.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aixmarseillevtc.fr/chauffeur-affaires.html">
+    <meta property="og:title" content="Chauffeur d'Affaires Premium Aix-Marseille | VTC Business & Corporate 24/7">
+    <meta property="og:description" content="Service VTC d'affaires premium à Aix-en-Provence et Marseille. Chauffeurs discrets, véhicules haut de gamme pour vos déplacements professionnels.">
+    <meta property="og:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="VTC Aix-Marseille">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aixmarseillevtc.fr/chauffeur-affaires.html">
+    <meta property="twitter:title" content="Chauffeur d'Affaires Premium Aix-Marseille | VTC Business & Corporate 24/7">
+    <meta property="twitter:description" content="Service VTC d'affaires premium à Aix-en-Provence et Marseille. Chauffeurs discrets, véhicules haut de gamme pour vos déplacements professionnels.">
+    <meta property="twitter:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Chauffeur d'Affaires",
+      "name": "Service de Chauffeur VTC pour Professionnels à Aix-Marseille",
+      "description": "Un service de transport VTC haut de gamme dédié aux professionnels, entreprises et voyageurs d'affaires à Aix-en-Provence, Marseille et en région PACA. Nous garantissons ponctualité, discrétion et confort pour tous vos déplacements corporate.",
+      "url": "https://www.aixmarseillevtc.fr/chauffeur-affaires.html",
+      "provider": {
+        "@type": "TaxiService",
+        "name": "VTC Aix-Marseille",
+        "telephone": "+33743542309",
+        "priceRange": "€€",
+        "url": "https://www.aixmarseillevtc.fr/"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Provence-Alpes-Côte d'Azur"
+      },
+      "image": "https://www.aixmarseillevtc.fr/og-image.jpg",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "description": "Tarifs sur devis pour des mises à disposition ou des transferts business."
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.aixmarseillevtc.fr/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Chauffeur d'Affaires",
+            "item": "https://www.aixmarseillevtc.fr/chauffeur-affaires.html"
+        }]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -33,7 +101,7 @@
                 <li><a href="index.html#avis">Avis</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
@@ -70,7 +138,7 @@
                     <div class="form-group">
                         <input type="text" id="pickup-fr" required placeholder=" ">
                         <label for="pickup-fr">Adresse de prise en charge</label>
-                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position">
+                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position" aria-label="Utiliser ma position actuelle">
                             <i class="fas fa-crosshairs"></i>
                         </button>
                     </div>
@@ -99,7 +167,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <select id="passengers-fr" required>
+                        <select id="passengers-fr" required aria-label="Nombre de passagers">
                             <option value="" disabled selected>Nombre de passagers</option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>

@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transfert VTC Aéroport Marseille-Provence (MRS) | Service Fiable 24/7</title>
-    <meta name="description" content="Réservez votre VTC pour un transfert depuis ou vers l'aéroport de Marseille-Provence. Chauffeur privé ponctuel, tarif fixe et confort garanti. Service 24h/24.">
+    <title>VTC Aéroport Marseille (MRS) ⭐ Transfert Fiable 24/7 | Tarif Fixe</title>
+    <meta name="description" content="Réservez votre VTC pour un transfert depuis ou vers l'aéroport de Marseille-Provence (MRS). Chauffeur privé ponctuel, tarif fixe, suivi de vol et confort garanti. Service 24h/24.">
+    <meta name="keywords" content="vtc aéroport marseille, transfert aéroport marseille, navette aéroport mrs, chauffeur privé aéroport marseille, vtc marignane, aéroport marseille vers aix-en-provence">
+    <meta name="author" content="VTC Aix-Marseille">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.aixmarseillevtc.fr/transfert-aeroport-marseille.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aixmarseillevtc.fr/transfert-aeroport-marseille.html">
+    <meta property="og:title" content="VTC Aéroport Marseille (MRS) ⭐ Transfert Fiable 24/7 | Tarif Fixe">
+    <meta property="og:description" content="Réservez votre VTC pour l'aéroport de Marseille-Provence. Chauffeur privé ponctuel, tarif fixe et confort garanti. Service 24h/24.">
+    <meta property="og:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="VTC Aix-Marseille">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aixmarseillevtc.fr/transfert-aeroport-marseille.html">
+    <meta property="twitter:title" content="VTC Aéroport Marseille (MRS) ⭐ Transfert Fiable 24/7 | Tarif Fixe">
+    <meta property="twitter:description" content="Réservez votre VTC pour l'aéroport de Marseille-Provence. Chauffeur privé ponctuel, tarif fixe et confort garanti. Service 24h/24.">
+    <meta property="twitter:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Airport Transfer",
+      "name": "Transfert VTC Aéroport Marseille-Provence (MRS)",
+      "description": "Service de chauffeur privé pour des transferts fiables et confortables depuis et vers l'aéroport de Marseille-Provence (MRS). Nous offrons un accueil personnalisé, un suivi des vols en temps réel et des tarifs fixes.",
+      "url": "https://www.aixmarseillevtc.fr/transfert-aeroport-marseille.html",
+      "provider": {
+        "@type": "TaxiService",
+        "name": "VTC Aix-Marseille",
+        "telephone": "+33743542309",
+        "priceRange": "€€",
+        "url": "https://www.aixmarseillevtc.fr/"
+      },
+      "areaServed": {
+        "@type": "Airport",
+        "name": "Aéroport Marseille-Provence",
+        "iataCode": "MRS"
+      },
+      "image": "https://www.aixmarseillevtc.fr/og-image.jpg"
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -33,7 +80,7 @@
                 <li><a href="index.html#avis">Avis</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
@@ -70,7 +117,7 @@
                     <div class="form-group">
                         <input type="text" id="pickup-fr" required placeholder=" " value="Aéroport Marseille-Provence">
                         <label for="pickup-fr">Adresse de prise en charge</label>
-                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position">
+                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position" aria-label="Utiliser ma position actuelle">
                             <i class="fas fa-crosshairs"></i>
                         </button>
                     </div>
@@ -99,7 +146,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <select id="passengers-fr" required>
+                        <select id="passengers-fr" required aria-label="Nombre de passagers">
                             <option value="" disabled selected>Nombre de passagers</option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>
@@ -127,45 +174,46 @@
     </section>
 
     <!-- Benefits Section - 6 CARDS -->
-    <section class="services" id="benefits">
-        <div class="container">
-            <h2 class="section-title">Voyagez Sans Stress vers ou depuis l'Aéroport</h2>
-            <p class="section-subtitle">Oubliez les files d'attente pour les taxis et l'incertitude des transports en commun.</p>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-plane-arrival"></i></div>
-                    <h3>Accueil Personnalisé</h3>
-                    <p>Votre chauffeur vous attend à la sortie des bagages avec une pancarte à votre nom.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-euro-sign"></i></div>
-                    <h3>Tarif Fixe</h3>
-                    <p>Prix convenu à l'avance, sans surprise. Pas de frais cachés pour bagages ou trafic.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Ponctualité Assurée</h3>
-                    <p>Suivi de vol en temps réel pour s'adapter à tout retard et garantir votre prise en charge.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-couch"></i></div>
-                    <h3>Confort Premium</h3>
-                    <p>Véhicules haut de gamme, impeccables et équipés (eau, chargeurs).</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-suitcase-rolling"></i></div>
-                    <h3>Espace Bagages</h3>
-                    <p>Large coffre pour tous vos bagages, même volumineux. Aide au chargement incluse.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Service Sécurisé</h3>
-                    <p>Chauffeurs professionnels VTC licenciés, véhicules assurés et contrôlés.</p>
+    <main>
+        <section class="services" id="benefits">
+            <div class="container">
+                <h2 class="section-title">Voyagez Sans Stress vers ou depuis l'Aéroport</h2>
+                <p class="section-subtitle">Oubliez les files d'attente pour les taxis et l'incertitude des transports en commun.</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-plane-arrival"></i></div>
+                        <h3>Accueil Personnalisé</h3>
+                        <p>Votre chauffeur vous attend à la sortie des bagages avec une pancarte à votre nom.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-euro-sign"></i></div>
+                        <h3>Tarif Fixe</h3>
+                        <p>Prix convenu à l'avance, sans surprise. Pas de frais cachés pour bagages ou trafic.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Ponctualité Assurée</h3>
+                        <p>Suivi de vol en temps réel pour s'adapter à tout retard et garantir votre prise en charge.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-couch"></i></div>
+                        <h3>Confort Premium</h3>
+                        <p>Véhicules haut de gamme, impeccables et équipés (eau, chargeurs).</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-suitcase-rolling"></i></div>
+                        <h3>Espace Bagages</h3>
+                        <p>Large coffre pour tous vos bagages, même volumineux. Aide au chargement incluse.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Service Sécurisé</h3>
+                        <p>Chauffeurs professionnels VTC licenciés, véhicules assurés et contrôlés.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">

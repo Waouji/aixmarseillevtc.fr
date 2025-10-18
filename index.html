@@ -5,10 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VTC Aix-Marseille ★ Chauffeur Privé Premium 24/7 | Réservation Immédiate</title>
     <meta name="description" content="⭐ Service VTC Premium à Aix-en-Provence & Marseille. Chauffeur privé 24/7, Tesla électrique, tarifs fixes. Transferts aéroport, gares, business. Réservation express en 1 clic.">
+    <meta name="keywords" content="vtc aix-en-provence, vtc marseille, chauffeur privé aix-marseille, aéroport marseille vtc, gare aix tgv vtc, réservation vtc, tesla vtc, transport premium paca">
+    <meta name="author" content="VTC Aix-Marseille">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.aixmarseillevtc.fr/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aixmarseillevtc.fr/">
+    <meta property="og:title" content="VTC Aix-Marseille ★ Chauffeur Privé Premium 24/7 | Réservation Immédiate">
+    <meta property="og:description" content="⭐ Service VTC Premium à Aix-en-Provence & Marseille. Chauffeur privé 24/7, Tesla électrique, tarifs fixes. Transferts aéroport, gares, business.">
+    <meta property="og:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="VTC Aix-Marseille">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aixmarseillevtc.fr/">
+    <meta property="twitter:title" content="VTC Aix-Marseille ★ Chauffeur Privé Premium 24/7 | Réservation Immédiate">
+    <meta property="twitter:description" content="⭐ Service VTC Premium à Aix-en-Provence & Marseille. Chauffeur privé 24/7, Tesla électrique, tarifs fixes. Transferts aéroport, gares, business.">
+    <meta property="twitter:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "VTC Aix-Marseille",
+      "image": "https://www.aixmarseillevtc.fr/og-image.jpg",
+      "description": "Service de chauffeur privé VTC premium à Aix-en-Provence, Marseille et dans toute la région PACA. Spécialisé dans les transferts aéroport, gares, déplacements business et circuits touristiques avec des véhicules haut de gamme (Tesla) et un service 24/7.",
+      "url": "https://www.aixmarseillevtc.fr/",
+      "telephone": "+33743542309",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aix-en-Provence",
+        "addressRegion": "PACA",
+        "addressCountry": "FR"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Provence-Alpes-Côte d'Azur"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "20"
+      },
+      "serviceType": [
+        "Transfert aéroport",
+        "Transfert gare",
+        "Chauffeur d'affaires",
+        "Mise à disposition",
+        "Circuit touristique",
+        "Transport événementiel"
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -33,13 +98,13 @@
                 <li><a href="#avis">Avis</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle" aria-label="Menu mobile"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
     <!-- EXPRESS DEMAND BUTTON -->
     <div class="express-demand">
-        <button id="express-demand-btn" class="express-btn" aria-label="Demande express">
+        <button id="express-demand-btn" class="express-btn" aria-label="Demande express par WhatsApp">
             <i class="fab fa-whatsapp"></i>
             <span>BESOIN D'UN CHAUFFEUR MAINTENANT ?</span>
         </button>
@@ -71,7 +136,7 @@
                     <div class="form-group">
                         <input type="text" id="pickup-fr" required placeholder=" ">
                         <label for="pickup-fr">Adresse de prise en charge</label>
-                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position">
+                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position" aria-label="Utiliser ma position actuelle">
                             <i class="fas fa-crosshairs"></i>
                         </button>
                     </div>
@@ -100,7 +165,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <select id="passengers-fr" required>
+                        <select id="passengers-fr" required aria-label="Nombre de passagers">
                             <option value="" disabled selected>Nombre de passagers</option>
                             <option value="1">1 passager</option>
                             <option value="2">2 passagers</option>
@@ -128,180 +193,181 @@
     </section>
 
     <!-- Services Section - 6 CARDS -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">Services Premium Sur-Mesure</h2>
-            <p class="section-subtitle">Un transport d'exception pour chacun de vos besoins en Provence</p>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
-                    <h3>Transferts Aéroport & Gares</h3>
-                    <p>Prise en charge ponctuelle depuis/vers l'aéroport Marseille-Provence et les gares TGV. Suivi de vol en temps réel.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Déplacements Business</h3>
-                    <p>Service discret et professionnel pour vos rendez-vous d'affaires, séminaires et déplacements corporate.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-ring"></i></div>
-                    <h3>Mariages & Événements</h3>
-                    <p>Transport élégant pour vos occasions spéciales. Véhicules décorables et service personnalisé.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-map-signs"></i></div>
-                    <h3>Circuits Touristiques</h3>
-                    <p>Découvrez la Provence avec un chauffeur-guide privé : Luberon, Calanques, villages perchés.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Mise à Disposition</h3>
-                    <p>Réservez votre chauffeur à l'heure, demi-journée ou journée complète pour une flexibilité totale.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Service Express 24/7</h3>
-                    <p>Besoin d'un chauffeur immédiatement ? Notre service express est disponible jour et nuit sans réservation.</p>
+    <main>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Services Premium Sur-Mesure</h2>
+                <p class="section-subtitle">Un transport d'exception pour chacun de vos besoins en Provence</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+                        <h3>Transferts Aéroport & Gares</h3>
+                        <p>Prise en charge ponctuelle depuis/vers l'aéroport Marseille-Provence et les gares TGV. Suivi de vol en temps réel.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Déplacements Business</h3>
+                        <p>Service discret et professionnel pour vos rendez-vous d'affaires, séminaires et déplacements corporate.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-ring"></i></div>
+                        <h3>Mariages & Événements</h3>
+                        <p>Transport élégant pour vos occasions spéciales. Véhicules décorables et service personnalisé.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-map-signs"></i></div>
+                        <h3>Circuits Touristiques</h3>
+                        <p>Découvrez la Provence avec un chauffeur-guide privé : Luberon, Calanques, villages perchés.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Mise à Disposition</h3>
+                        <p>Réservez votre chauffeur à l'heure, demi-journée ou journée complète pour une flexibilité totale.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Service Express 24/7</h3>
+                        <p>Besoin d'un chauffeur immédiatement ? Notre service express est disponible jour et nuit sans réservation.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Reviews Section -->
-    <section class="google-business" id="avis">
-        <div class="container">
-            <h2 class="section-title">Excellence Reconnue par Nos Clients</h2>
-            <p class="section-subtitle">Une note moyenne de 5.0/5 basée sur des dizaines d'avis vérifiés</p>
-            <div class="reviews-and-qr-grid">
-                <div class="reviews-container">
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar" style="background-color: hsl(200, 60%, 65%)">M</div>
-                            <div>
-                                <div class="review-author">Marie Dupont</div>
-                                <div class="review-date">Octobre 2025</div>
+        <!-- Reviews Section -->
+        <section class="google-business" id="avis">
+            <div class="container">
+                <h2 class="section-title">Excellence Reconnue par Nos Clients</h2>
+                <p class="section-subtitle">Une note moyenne de 5.0/5 basée on des dizaines d'avis vérifiés</p>
+                <div class="reviews-and-qr-grid">
+                    <div class="reviews-container">
+                        <div class="review-card fade-in">
+                            <div class="review-header">
+                                <div class="review-avatar" style="background-color: hsl(200, 60%, 65%)">M</div>
+                                <div>
+                                    <div class="review-author">Marie Dupont</div>
+                                    <div class="review-date">Octobre 2025</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                        </div>
-                        <div class="review-content">Service impeccable du début à la fin ! Chauffeur très professionnel, ponctuel et la Tesla était d'une propreté irréprochable. Idéal pour les transferts aéroport.</div>
-                    </div>
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar" style="background-color: hsl(30, 60%, 65%)">J</div>
-                            <div>
-                                <div class="review-author">Julien Laurent</div>
-                                <div class="review-date">Septembre 2025</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
                             </div>
+                            <div class="review-content">Service impeccable du début à la fin ! Chauffeur très professionnel, ponctuel et la Tesla était d'une propreté irréprochable. Idéal pour les transferts aéroport.</div>
                         </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                        </div>
-                        <div class="review-content">Parfait pour mes déplacements professionnels. Discrétion, ponctualité et confort au rendez-vous. Je fais désormais appel à eux systématiquement.</div>
-                    </div>
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar" style="background-color: hsl(280, 60%, 65%)">S</div>
-                            <div>
-                                <div class="review-author">Sophie Bernard</div>
-                                <div class="review-date">Août 2025</div>
+                        <div class="review-card fade-in">
+                            <div class="review-header">
+                                <div class="review-avatar" style="background-color: hsl(30, 60%, 65%)">J</div>
+                                <div>
+                                    <div class="review-author">Julien Laurent</div>
+                                    <div class="review-date">Septembre 2025</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                        </div>
-                        <div class="review-content">Service exceptionnel pour notre mariage ! Le chauffeur était charmant, tout s'est déroulé sans accroc. Merci pour votre professionnalisme !</div>
-                    </div>
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar" style="background-color: hsl(140, 60%, 65%)">T</div>
-                            <div>
-                                <div class="review-author">Thomas Petit</div>
-                                <div class="review-date">Juillet 2025</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
                             </div>
+                            <div class="review-content">Parfait pour mes déplacements professionnels. Discrétion, ponctualité et confort au rendez-vous. Je fais désormais appel à eux systématiquement.</div>
                         </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
-                            <i class="fas fa-star star-icon"></i>
+                        <div class="review-card fade-in">
+                            <div class="review-header">
+                                <div class="review-avatar" style="background-color: hsl(280, 60%, 65%)">S</div>
+                                <div>
+                                    <div class="review-author">Sophie Bernard</div>
+                                    <div class="review-date">Août 2025</div>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                            </div>
+                            <div class="review-content">Service exceptionnel pour notre mariage ! Le chauffeur était charmant, tout s'est déroulé sans accroc. Merci pour votre professionnalisme !</div>
                         </div>
-                        <div class="review-content">Vol retardé de 2h, le chauffeur a attendu sans frais supplémentaires. Service au top avec bouteilles d'eau et chargeurs !</div>
+                        <div class="review-card fade-in">
+                            <div class="review-header">
+                                <div class="review-avatar" style="background-color: hsl(140, 60%, 65%)">T</div>
+                                <div>
+                                    <div class="review-author">Thomas Petit</div>
+                                    <div class="review-date">Juillet 2025</div>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                                <i class="fas fa-star star-icon"></i>
+                            </div>
+                            <div class="review-content">Vol retardé de 2h, le chauffeur a attendu sans frais supplémentaires. Service au top avec bouteilles d'eau et chargeurs !</div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="qr-code-review-box fade-in">
-                    <h4>Votre Avis Compte !</h4>
-                    <p>Scannez pour partager votre expérience</p>
-                    <img id="review-qr-code" src="" alt="QR Code avis">
-                    <a href="https://tinyurl.com/3r5juu95" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-star"></i> Laisser un Avis
-                    </a>
+                    
+                    <div class="qr-code-review-box fade-in">
+                        <h4>Votre Avis Compte !</h4>
+                        <p>Scannez pour partager votre expérience</p>
+                        <img id="review-qr-code" src="" alt="QR Code pour laisser un avis sur notre service VTC">
+                        <a href="https://tinyurl.com/3r5juu95" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-star"></i> Laisser un Avis
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section - 6 CARDS -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-Nous 24/7</h2>
-            <p class="section-subtitle">Disponible jour et nuit pour tous vos déplacements</p>
-            <div class="contact-grid">
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                    <h3>WhatsApp</h3>
-                    <p><a href="https://wa.me/33743542309">+33 7 43 54 23 09</a></p>
-                    <p>Réponse instantanée</p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                    <h3>Téléphone</h3>
-                    <p><a href="tel:+33743542309">+33 7 43 54 23 09</a></p>
-                    <p>Disponible 24/7</p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:contact@aixmarseillevtc.fr">contact@aixmarseillevtc.fr</a></p>
-                    <p>Réponse sous 2h</p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fas fa-id-card"></i></div>
-                    <h3>Licence VTC</h3>
-                    <p>N° 01325100001</p>
-                    <p>Service agréé & assuré</p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Zone de Service</h3>
-                    <p>Aix-en-Provence</p>
-                    <p>Marseille & Région PACA</p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Assurance Pro</h3>
-                    <p>Couverture complète</p>
-                    <p>Tous passagers assurés</p>
+        <!-- Contact Section - 6 CARDS -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contactez-Nous 24/7</h2>
+                <p class="section-subtitle">Disponible jour et nuit pour tous vos déplacements</p>
+                <div class="contact-grid">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/33743542309">+33 7 43 54 23 09</a></p>
+                        <p>Réponse instantanée</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:+33743542309">+33 7 43 54 23 09</a></p>
+                        <p>Disponible 24/7</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@aixmarseillevtc.fr">contact@aixmarseillevtc.fr</a></p>
+                        <p>Réponse sous 2h</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fas fa-id-card"></i></div>
+                        <h3>Licence VTC</h3>
+                        <p>N° 01325100001</p>
+                        <p>Service agréé & assuré</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Zone de Service</h3>
+                        <p>Aix-en-Provence</p>
+                        <p>Marseille & Région PACA</p>
+                    </div>
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Assurance Pro</h3>
+                        <p>Couverture complète</p>
+                        <p>Tous passagers assurés</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">

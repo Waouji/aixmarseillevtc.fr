@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mise à Disposition VTC Aix-Marseille | Chauffeur à l'Heure</title>
-    <meta name="description" content="Réservez un chauffeur VTC privé à l'heure, demi-journée ou journée complète à Aix-en-Provence et Marseille.">
+    <title>Mise à Disposition VTC Aix-Marseille | Chauffeur Privé à l'Heure / Journée</title>
+    <meta name="description" content="Réservez un chauffeur VTC privé à l'heure, demi-journée ou journée complète à Aix-en-Provence et Marseille. Flexibilité totale pour vos roadshows, circuits touristiques ou événements.">
+    <meta name="keywords" content="mise a disposition vtc aix-marseille, chauffeur à l'heure, location voiture avec chauffeur journée, vtc demi-journée marseille, chauffeur privé paca, forfait vtc journée">
+    <meta name="author" content="VTC Aix-Marseille">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.aixmarseillevtc.fr/mise-a-disposition.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aixmarseillevtc.fr/mise-a-disposition.html">
+    <meta property="og:title" content="Mise à Disposition VTC Aix-Marseille | Chauffeur Privé à l'Heure / Journée">
+    <meta property="og:description" content="Réservez un chauffeur VTC privé à l'heure, demi-journée ou journée complète à Aix-en-Provence et Marseille.">
+    <meta property="og:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="VTC Aix-Marseille">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aixmarseillevtc.fr/mise-a-disposition.html">
+    <meta property="twitter:title" content="Mise à Disposition VTC Aix-Marseille | Chauffeur Privé à l'Heure / Journée">
+    <meta property="twitter:description" content="Réservez un chauffeur VTC privé à l'heure, demi-journée ou journée complète à Aix-en-Provence et Marseille.">
+    <meta property="twitter:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Mise à Disposition de Chauffeur VTC",
+      "name": "Location de VTC avec Chauffeur à l'heure ou à la journée",
+      "description": "Service de mise à disposition d'un véhicule haut de gamme avec chauffeur privé à Aix-Marseille. Réservez pour quelques heures, une demi-journée ou une journée complète pour une flexibilité maximale lors de vos déplacements professionnels, touristiques ou événementiels.",
+      "url": "https://www.aixmarseillevtc.fr/mise-a-disposition.html",
+      "provider": {
+        "@type": "TaxiService",
+        "name": "VTC Aix-Marseille",
+        "telephone": "+33743542309",
+        "priceRange": "€€€",
+        "url": "https://www.aixmarseillevtc.fr/"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Provence-Alpes-Côte d'Azur"
+      },
+      "image": "https://www.aixmarseillevtc.fr/og-image.jpg",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "75",
+        "unitText": "HOUR",
+        "description": "Tarif horaire à partir de 75€, minimum de 2 heures. Forfaits demi-journée et journée disponibles sur devis."
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -33,7 +86,7 @@
                 <li><a href="index.html#avis">Avis</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
@@ -89,14 +142,14 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <select id="passengers-quote" required>
+                        <select id="passengers-quote" required aria-label="Nombre de passagers">
                             <option value="" disabled selected>Nombre de passagers</option>
                             <option value="1-4">1 à 4 (Tesla Y)</option>
                             <option value="5-7">5 à 7 (Van)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <select id="service-quote" required>
+                        <select id="service-quote" required aria-label="Motif principal">
                             <option value="" disabled selected>Motif principal</option>
                             <option value="Affaires">Affaires</option>
                             <option value="Tourisme">Tourisme</option>
@@ -119,45 +172,46 @@
     </section>
 
     <!-- Services Section - 6 CARDS -->
-    <section class="services" id="about-mad">
-        <div class="container">
-            <h2 class="section-title">La Liberté d'un Chauffeur à Votre Entière Disposition</h2>
-            <p class="section-subtitle">Notre service vous offre un véhicule avec chauffeur privé pour une durée déterminée. Flexibilité et sérénité inégalées.</p>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Flexibilité Absolue</h3>
-                    <p>Votre chauffeur s'adapte à votre emploi du temps, même en cas d'imprévu.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-user-shield"></i></div>
-                    <h3>Discrétion Totale</h3>
-                    <p>Confidentialité garantie pour vos conversations et déplacements professionnels.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-route"></i></div>
-                    <h3>Multi-Destinations</h3>
-                    <p>Enchaînez vos rendez-vous sans vous soucier de la logistique.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Business Premium</h3>
-                    <p>Parfait pour vos roadshows et journées de réunions importantes.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
-                    <h3>Tourisme Privé</h3>
-                    <p>Découvrez la Provence à votre rythme avec votre chauffeur-guide.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-euro-sign"></i></div>
-                    <h3>Tarif Transparent</h3>
-                    <p>Prix horaire ou forfait journée, communiqué et garanti à l'avance.</p>
+    <main>
+        <section class="services" id="about-mad">
+            <div class="container">
+                <h2 class="section-title">La Liberté d'un Chauffeur à Votre Entière Disposition</h2>
+                <p class="section-subtitle">Notre service vous offre un véhicule avec chauffeur privé pour une durée déterminée. Flexibilité et sérénité inégalées.</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Flexibilité Absolue</h3>
+                        <p>Votre chauffeur s'adapte à votre emploi du temps, même en cas d'imprévu.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3>Discrétion Totale</h3>
+                        <p>Confidentialité garantie pour vos conversations et déplacements professionnels.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-route"></i></div>
+                        <h3>Multi-Destinations</h3>
+                        <p>Enchaînez vos rendez-vous sans vous soucier de la logistique.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Business Premium</h3>
+                        <p>Parfait pour vos roadshows et journées de réunions importantes.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                        <h3>Tourisme Privé</h3>
+                        <p>Découvrez la Provence à votre rythme avec votre chauffeur-guide.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-euro-sign"></i></div>
+                        <h3>Tarif Transparent</h3>
+                        <p>Prix horaire ou forfait journée, communiqué et garanti à l'avance.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -210,3 +264,4 @@
 
     <script src="scripts.js"></script>
 </body>
+</html>

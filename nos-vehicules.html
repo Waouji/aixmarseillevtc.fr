@@ -3,12 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Véhicules VTC Premium - Tesla Model Y & Mercedes Vito | Aix-Marseille</title>
-    <meta name="description" content="Découvrez notre flotte VTC haut de gamme : Tesla Model Y 100% électrique et Mercedes Vito spacieux. Confort, luxe et technologie pour vos déplacements à Aix-Marseille.">
+    <title>Nos Véhicules VTC : Tesla Model Y & Van Mercedes | Aix-Marseille</title>
+    <meta name="description" content="Découvrez notre flotte VTC haut de gamme : Tesla Model Y 100% électrique (1-4 pers) et Mercedes Van (1-7 pers). Confort, luxe et technologie pour vos déplacements à Aix-Marseille.">
+    <meta name="keywords" content="véhicule vtc aix-marseille, tesla model y vtc, van mercedes vtc, flotte vtc paca, voiture avec chauffeur aix-en-provence, transport groupe marseille">
+    <meta name="author" content="VTC Aix-Marseille">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://www.aixmarseillevtc.fr/nos-vehicules.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aixmarseillevtc.fr/nos-vehicules.html">
+    <meta property="og:title" content="Nos Véhicules VTC : Tesla Model Y & Van Mercedes | Aix-Marseille">
+    <meta property="og:description" content="Découvrez notre flotte VTC haut de gamme : Tesla Model Y 100% électrique et Mercedes Van spacieux. Confort, luxe et technologie pour vos déplacements.">
+    <meta property="og:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="VTC Aix-Marseille">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aixmarseillevtc.fr/nos-vehicules.html">
+    <meta property="twitter:title" content="Nos Véhicules VTC : Tesla Model Y & Van Mercedes | Aix-Marseille">
+    <meta property="twitter:description" content="Découvrez notre flotte VTC haut de gamme : Tesla Model Y 100% électrique et Mercedes Van spacieux. Confort, luxe et technologie pour vos déplacements.">
+    <meta property="twitter:image" content="https://www.aixmarseillevtc.fr/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Notre Flotte de Véhicules VTC Premium",
+      "description": "Présentation de notre flotte de véhicules avec chauffeur à Aix-Marseille, incluant la Tesla Model Y 100% électrique et le spacieux van Mercedes Vito pour les groupes.",
+      "url": "https://www.aixmarseillevtc.fr/nos-vehicules.html",
+      "mainEntity": [
+        {
+          "@type": "Product",
+          "name": "Tesla Model Y",
+          "description": "Véhicule VTC 100% électrique, silencieux et écologique. Idéal pour 1 à 4 passagers, offrant un confort premium avec toit panoramique.",
+          "image": "https://nplimo.com/wp-content/uploads/2023/04/tesla-y.png",
+          "brand": {
+            "@type": "Brand",
+            "name": "Tesla"
+          },
+          "vehicleSeatingCapacity": 4,
+          "fuelType": "Electric"
+        },
+        {
+          "@type": "Product",
+          "name": "Mercedes Vito",
+          "description": "Van premium spacieux et confortable, parfait pour les groupes et familles jusqu'à 7 passagers. Grand volume pour les bagages.",
+          "image": "https://imgservprod.bymycar.fr/image/?apikey=437fe90bfc2e7879f0953434890aa246&url=https://cdn.bymycar.eu/fr-bo/assets/images/vehicles/vn/1011374/687f50bb9a63a.png",
+          "brand": {
+            "@type": "Brand",
+            "name": "Mercedes-Benz"
+          },
+          "vehicleSeatingCapacity": 7
+        }
+      ]
+    }
+    </script>
+
 </head>
 <body>
     <header>
@@ -33,7 +92,7 @@
                 <li><a href="index.html#avis">Avis</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
@@ -71,7 +130,7 @@
                     <div class="form-group">
                         <input type="text" id="pickup-fr" required placeholder=" ">
                         <label for="pickup-fr">Adresse de prise en charge</label>
-                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position">
+                        <button type="button" class="geo-btn" onclick="getLocation('fr')" title="Utiliser ma position" aria-label="Utiliser ma position actuelle">
                             <i class="fas fa-crosshairs"></i>
                         </button>
                     </div>
@@ -100,7 +159,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <select id="passengers-fr" required>
+                        <select id="passengers-fr" required aria-label="Choix du véhicule">
                             <option value="" disabled selected>Choix du véhicule</option>
                             <option value="1-4">🚗 Tesla Model Y (1-4 passagers) - Premium</option>
                             <option value="5-7">🚐 Mercedes Vito (5-7 passagers) - Confort</option>
@@ -125,151 +184,152 @@
     </section>
 
     <!-- Fleet Showcase - NOUVEAU DESIGN -->
-    <section class="services" id="fleet">
-        <div class="container">
-            <h2 class="section-title">Découvrez Notre Flotte d'Exception</h2>
-            <p class="section-subtitle">Deux véhicules premium, un seul objectif : votre confort absolu</p>
-            
-            <!-- TESLA MODEL Y -->
-            <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%); border-radius: 30px; padding: 60px 40px; margin-bottom: 60px; border: 2px solid rgba(212, 175, 55, 0.3);">
-                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center;">
-                    <div>
-                        <div style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); padding: 8px 20px; border-radius: 50px; margin-bottom: 20px;">
-                            <span style="color: #0a0a0a; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">⚡ 100% Électrique</span>
-                        </div>
-                        <h3 style="font-size: 3rem; font-weight: 900; margin-bottom: 15px; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Tesla Model Y</h3>
-                        <p style="font-size: 1.3rem; color: rgba(255,255,255,0.8); margin-bottom: 35px; line-height: 1.7;">L'excellence du transport 100% électrique. Voyagez en silence dans un confort absolu avec une vue panoramique imprenable. L'innovation Tesla au service de votre mobilité premium.</p>
-                        
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 35px;">
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👥</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">1-4 Passagers</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Confort optimal</div>
+    <main>
+        <section class="services" id="fleet">
+            <div class="container">
+                <h2 class="section-title">Découvrez Notre Flotte d'Exception</h2>
+                <p class="section-subtitle">Deux véhicules premium, un seul objectif : votre confort absolu</p>
+                
+                <!-- TESLA MODEL Y -->
+                <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%); border-radius: 30px; padding: 60px 40px; margin-bottom: 60px; border: 2px solid rgba(212, 175, 55, 0.3);">
+                    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center;">
+                        <div>
+                            <div style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); padding: 8px 20px; border-radius: 50px; margin-bottom: 20px;">
+                                <span style="color: #0a0a0a; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">⚡ 100% Électrique</span>
                             </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🧳</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">3-4 Bagages</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Grande capacité</div>
+                            <h3 style="font-size: 3rem; font-weight: 900; margin-bottom: 15px; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Tesla Model Y</h3>
+                            <p style="font-size: 1.3rem; color: rgba(255,255,255,0.8); margin-bottom: 35px; line-height: 1.7;">L'excellence du transport 100% électrique. Voyagez en silence dans un confort absolu avec une vue panoramique imprenable. L'innovation Tesla au service de votre mobilité premium.</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 35px;">
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👥</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">1-4 Passagers</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Confort optimal</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🧳</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">3-4 Bagages</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Grande capacité</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🌿</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Zéro Émission</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">100% électrique</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">☀️</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Toit Panoramique</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Vue spectaculaire</div>
+                                </div>
                             </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🌿</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Zéro Émission</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">100% électrique</div>
-                            </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">☀️</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Toit Panoramique</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Vue spectaculaire</div>
-                            </div>
-                        </div>
 
-                        <a href="#booking" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-bolt"></i> Réserver la Tesla Model Y
-                        </a>
+                            <a href="#booking" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-bolt"></i> Réserver la Tesla Model Y
+                            </a>
+                        </div>
+                        <div>
+                            <img src="https://nplimo.com/wp-content/uploads/2023/04/tesla-y.png" alt="Tesla Model Y VTC Premium Aix-Marseille, véhicule électrique silencieux et confortable." style="width: 100%; height: auto; filter: drop-shadow(0 20px 60px rgba(212, 175, 55, 0.3)); border-radius: 20px;">
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://nplimo.com/wp-content/uploads/2023/04/tesla-y.png" alt="Tesla Model Y VTC Premium" style="width: 100%; height: auto; filter: drop-shadow(0 20px 60px rgba(212, 175, 55, 0.3)); border-radius: 20px;">
+                </div>
+
+                <!-- MERCEDES VITO -->
+                <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%); border-radius: 30px; padding: 60px 40px; border: 2px solid rgba(212, 175, 55, 0.3);">
+                    <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center;">
+                        <div>
+                            <img src="https://imgservprod.bymycar.fr/image/?apikey=437fe90bfc2e7879f0953434890aa246&url=https://cdn.bymycar.eu/fr-bo/assets/images/vehicles/vn/1011374/687f50bb9a63a.png" alt="Van Mercedes Vito VTC pour groupes et familles à Aix-Marseille, jusqu'à 7 passagers." style="width: 100%; height: auto; filter: drop-shadow(0 20px 60px rgba(212, 175, 55, 0.3)); border-radius: 20px;">
+                        </div>
+                        <div>
+                            <div style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); padding: 8px 20px; border-radius: 50px; margin-bottom: 20px;">
+                                <span style="color: #0a0a0a; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">👨‍👩‍👧‍👦 Groupes & Familles</span>
+                            </div>
+                            <h3 style="font-size: 3rem; font-weight: 900; margin-bottom: 15px; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mercedes Vito</h3>
+                            <p style="font-size: 1.3rem; color: rgba(255,255,255,0.8); margin-bottom: 35px; line-height: 1.7;">La solution premium pour les groupes et familles. Espace généreux, confort exceptionnel et volume de bagages impressionnant. Parfait pour vos circuits touristiques et événements.</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 35px;">
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👥</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">5-7 Passagers</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Espace modulable</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🧳</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Jusqu'à 8 Bagages</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Volume généreux</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🔌</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Ports USB</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Pour tous les passagers</div>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
+                                    <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👶</div>
+                                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Sièges Auto</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Sur demande gratuite</div>
+                                </div>
+                            </div>
+
+                            <a href="#booking" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-users"></i> Réserver le Mercedes Vito
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- MERCEDES VITO -->
-            <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%); border-radius: 30px; padding: 60px 40px; border: 2px solid rgba(212, 175, 55, 0.3);">
-                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center;">
-                    <div>
-                        <img src="https://imgservprod.bymycar.fr/image/?apikey=437fe90bfc2e7879f0953434890aa246&url=https://cdn.bymycar.eu/fr-bo/assets/images/vehicles/vn/1011374/687f50bb9a63a.png" alt="Mercedes Vito VTC Spacieux" style="width: 100%; height: auto; filter: drop-shadow(0 20px 60px rgba(212, 175, 55, 0.3)); border-radius: 20px;">
+        <!-- Avantages - 6 CARDS -->
+        <section class="booking" id="avantages">
+            <div class="container">
+                <h2 class="section-title">Pourquoi Choisir Notre Flotte Premium ?</h2>
+                <p class="section-subtitle">L'excellence à chaque détail pour votre confort et votre sécurité</p>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-sparkles"></i></div>
+                        <h3>Propreté Impeccable</h3>
+                        <p>Intérieur et extérieur nettoyés et désinfectés après chaque course pour votre hygiène.</p>
                     </div>
-                    <div>
-                        <div style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); padding: 8px 20px; border-radius: 50px; margin-bottom: 20px;">
-                            <span style="color: #0a0a0a; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">👨‍👩‍👧‍👦 Groupes & Familles</span>
-                        </div>
-                        <h3 style="font-size: 3rem; font-weight: 900; margin-bottom: 15px; background: linear-gradient(135deg, #D4AF37 0%, #F4E6A1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mercedes Vito</h3>
-                        <p style="font-size: 1.3rem; color: rgba(255,255,255,0.8); margin-bottom: 35px; line-height: 1.7;">La solution premium pour les groupes et familles. Espace généreux, confort exceptionnel et volume de bagages impressionnant. Parfait pour vos circuits touristiques et événements.</p>
-                        
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 35px;">
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👥</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">5-7 Passagers</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Espace modulable</div>
-                            </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🧳</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Jusqu'à 8 Bagages</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Volume généreux</div>
-                            </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">🔌</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Ports USB</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Pour tous les passagers</div>
-                            </div>
-                            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border-left: 3px solid #D4AF37;">
-                                <div style="font-size: 2.5rem; color: #D4AF37; margin-bottom: 5px;">👶</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 5px;">Sièges Auto</div>
-                                <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6);">Sur demande gratuite</div>
-                            </div>
-                        </div>
-
-                        <a href="#booking" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-users"></i> Réserver le Mercedes Vito
-                        </a>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Entretien Premium</h3>
+                        <p>Maintenance régulière en concession officielle pour votre sécurité et votre tranquillité.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-water"></i></div>
+                        <h3>Équipements Inclus</h3>
+                        <p>Bouteilles d'eau fraîche, chargeurs smartphones, mouchoirs et friandises à disposition.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-snowflake"></i></div>
+                        <h3>Climatisation Premium</h3>
+                        <p>Contrôle de température individuel pour un confort optimal quelle que soit la saison.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-volume-mute"></i></div>
+                        <h3>Silence & Sérénité</h3>
+                        <p>Isolation acoustique optimale pour travailler, téléphoner ou vous reposer en toute tranquillité.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Sécurité Maximale</h3>
+                        <p>Technologies de pointe (ABS, ESP, airbags multiples) et assurance tous risques pour tous les passagers.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Avantages - 6 CARDS -->
-    <section class="booking" id="avantages">
-        <div class="container">
-            <h2 class="section-title">Pourquoi Choisir Notre Flotte Premium ?</h2>
-            <p class="section-subtitle">L'excellence à chaque détail pour votre confort et votre sécurité</p>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-sparkles"></i></div>
-                    <h3>Propreté Impeccable</h3>
-                    <p>Intérieur et extérieur nettoyés et désinfectés après chaque course pour votre hygiène.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Entretien Premium</h3>
-                    <p>Maintenance régulière en concession officielle pour votre sécurité et votre tranquillité.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-water"></i></div>
-                    <h3>Équipements Inclus</h3>
-                    <p>Bouteilles d'eau fraîche, chargeurs smartphones, mouchoirs et friandises à disposition.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-snowflake"></i></div>
-                    <h3>Climatisation Premium</h3>
-                    <p>Contrôle de température individuel pour un confort optimal quelle que soit la saison.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-volume-mute"></i></div>
-                    <h3>Silence & Sérénité</h3>
-                    <p>Isolation acoustique optimale pour travailler, téléphoner ou vous reposer en toute tranquillité.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Sécurité Maximale</h3>
-                    <p>Technologies de pointe (ABS, ESP, airbags multiples) et assurance tous risques pour tous les passagers.</p>
+        <!-- CTA Final -->
+        <section class="services" id="cta-final">
+            <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Prêt à Voyager en Première Classe ?</h2>
+                <p class="section-subtitle" style="margin-bottom: 40px;">Réservez dès maintenant votre véhicule premium et découvrez ce qu'est le vrai confort de transport.</p>
+                <div class="cta-buttons">
+                    <a href="#booking" class="btn btn-primary"><i class="fas fa-car"></i> Réserver Maintenant</a>
+                    <a href="nos-tarifs.html" class="btn btn-secondary"><i class="fas fa-euro-sign"></i> Voir les Tarifs</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="services" id="cta-final">
-        <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 class="section-title">Prêt à Voyager en Première Classe ?</h2>
-            <p class="section-subtitle" style="margin-bottom: 40px;">Réservez dès maintenant votre véhicule premium et découvrez ce qu'est le vrai confort de transport.</p>
-            <div class="cta-buttons">
-                <a href="#booking" class="btn btn-primary"><i class="fas fa-car"></i> Réserver Maintenant</a>
-                <a href="nos-tarifs.html" class="btn btn-secondary"><i class="fas fa-euro-sign"></i> Voir les Tarifs</a>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">
