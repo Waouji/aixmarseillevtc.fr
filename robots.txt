@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Provide the location of the sitemap
-Sitemap: https://aixmarseillevtc.fr/sitemap.xml
+Sitemap: https://www.aixmarseillevtc.fr/sitemap.xml
